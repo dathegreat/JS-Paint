@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Paint</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,700">
+  </head>
+  <body id="body" class="align-column" onload="init()">
+    <canvas id="canvas" class="flex-center"></canvas>
+	<script src="main.js"></script>
+
+    <div class="align-column flex-center">
+        <input class="colorPicker" name="brushColorPicker" type="color" id="brushColorPicker" value="#ffffff">
+            <label id="colorLabel" for="brushColorPicker">Brush Color</label>
+
+        <input class="colorPicker" name="backColorPicker" type="color" id="backColorPicker" value="#000000">
+            <label id="colorLabel" for="backColorPicker">Background Color</label>
+
+        <input id="sizeSlider" name="sizeSlider" type="range" min="1" max="50" step="1" value="5">
+            <label id="sizeLabel" for="sizeSlider">Brush Size: 5</label>
+    </div>
+    
+  </body>
+</html>
